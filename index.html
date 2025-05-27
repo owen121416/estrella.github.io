@@ -2,215 +2,130 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Invitación XV Años - Estrella</title>
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <title>Invitación XV Años</title>
     <style>
         body {
+            background-color: #111;
+            color: white;
+            font-family: 'Segoe UI', sans-serif;
             margin: 0;
-            padding: 30px;
-            font-family: 'Montserrat', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-height: 100vh;
-            box-sizing: border-box;
+            padding: 0;
         }
-
+        .contenedor {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #1c1c1c;
+            border: 2px solid gold;
+            border-radius: 16px;
+        }
+        .titulo {
+            text-align: center;
+            font-size: 2.5rem;
+            color: gold;
+            margin-bottom: 1rem;
+        }
+        .subtitulo {
+            text-align: center;
+            font-size: 1.2rem;
+            color: #ccc;
+            margin-bottom: 2rem;
+        }
         .tarjeta {
-            background-color: #fff;
-            border: 1px solid #ddd;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-            margin-bottom: 40px;
-            padding: 40px;
-            width: 90%;
-            max-width: 550px;
-            position: relative;
-            overflow: hidden;
+            background-color: #222;
+            border: 1px solid #444;
             border-radius: 12px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
         }
-
-        .tarjeta:first-child {
-            padding-top: 160px;
-        }
-
-        .decoracion-arriba {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 150px;
-            background-image: url('https://i.ibb.co/twcxLrTt/letras.png');
-            background-repeat: no-repeat;
-            background-position: center top;
-            background-size: contain;
-            z-index: 5;
-            opacity: 0.8;
-            border-radius: 12px 12px 0 0;
-        }
-
-        .imagen-central {
-            width: 100%;
-            max-width: 300px;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-            display: block;
-        }
-
-        .titulo-quince {
-            text-align: center;
-            font-family: 'Great Vibes', cursive;
-            font-size: 52px;
-            margin-top: 10px;
-            color: #c93a3d;
-        }
-
-        .quince {
-            font-size: 38px;
-            margin: 8px 0 20px 0;
-            text-align: center;
-            color: #c93a3d;
-            font-weight: 500;
-        }
-
-        .texto {
-            text-align: center;
-            margin: 25px 0;
-            line-height: 1.8;
-            font-size: 17px;
-            color: #555;
-        }
-
-        .fecha {
-            font-size: 22px;
-            font-weight: bold;
-            margin: 25px 0;
-            text-align: center;
-            border-top: 1px solid #eee;
-            border-bottom: 1px solid #eee;
-            padding: 15px 0;
-            color: #777;
-        }
-
-        .datos {
-            text-align: center;
-            font-size: 16px;
-            margin-top: 20px;
-            color: #555;
-        }
-
-        .icono {
-            font-size: 36px;
-            margin-bottom: 12px;
-            color: #c93a3d;
-            text-align: center;
-        }
-
         .subseccion {
-            border-left: 3px solid #c93a3d;
-            padding-left: 20px;
-            margin: 25px 0;
-            text-align: left;
-            color: #555;
+            margin-bottom: 1.5rem;
         }
-
-        .nombre {
-            font-weight: 500;
-            color: #333;
+        .icono {
+            font-size: 1.8rem;
+            margin-right: 0.5rem;
+            vertical-align: middle;
         }
-
-        .tarjeta:nth-child(2) .titulo-quince {
-            margin-top: 30px;
-        }
-
-        .confirmar-asistencia {
-            background-color: #c93a3d;
-            color: #fff;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 10px;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 18px;
-            font-weight: 500;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            margin-top: 30px;
-            align-self: center;
+        a {
+            color: gold;
             text-decoration: none;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
-
-        .confirmar-asistencia:hover {
-            background-color: #a72d30;
+        a:hover {
+            text-decoration: underline;
+        }
+        .imagen-centro {
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .imagen-centro img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 2px solid gold;
         }
     </style>
 </head>
 <body>
+    <div class="contenedor">
+        <div class="titulo">Mis XV Años</div>
+        <div class="subtitulo">Acompáñame a celebrar este día tan especial</div>
 
-    <div class="tarjeta">
-        <div class="decoracion-arriba"></div>
-
-        <!-- Imagen principal centrada -->
-        <img src="C:\Users\owenn\OneDrive\Escritorio\XV.png" alt="Foto de Estrella" class="imagen-central">
-
-        <div class="texto">
-            Con el corazón lleno de ilusión, quiero compartir contigo un momento único en mi vida.<br>
-            Agradezco a Dios por permitirme llegar hasta aquí, rodeada de amor, enseñanzas y bendiciones.<br><br>
-            Hoy celebro no solo un paso más, sino la unión de todas las personas que han caminado a mi lado.
+        <div class="imagen-centro">
+            <a href="https://ibb.co/wh0KrGnp" target="_blank">
+                <img src="https://i.ibb.co/wh0KrGnp/imagen-2025-05-26-220912899.png" alt="Imagen de XV años">
+            </a>
         </div>
 
-        <div class="titulo-quince">Estrella</div>
-        <div class="quince">XV AÑOS</div>
+        <div class="tarjeta">
+            <div class="subseccion">
+                <div class="icono">👑</div>
+                <span style="font-weight: bold;">Quinceañera:</span> Nombre de la Quinceañera
+            </div>
 
-        <div class="texto" style="font-size: 18px;"> 
-            <span class="nombre" style="font-weight: 600; color: #333;">Estrella Fernanda Pichardo Rodríguez</span><br>
-            tiene el honor de invitarte a compartir un momento muy especial en su vida,<br>
-            acompañándola con tu presencia y cariño en este día inolvidable.
+            <div class="subseccion">
+                <div class="icono">📅</div>
+                <span style="font-weight: bold;">Fecha:</span> Sábado, 20 de julio de 2025
+            </div>
+
+            <div class="subseccion">
+                <div class="icono">📍</div>
+                <span style="font-weight: bold;">Ubicación:</span> Cuautitlán, Estado de México
+            </div>
         </div>
 
-        <div class="fecha">Viernes 27 de Junio de 2025</div>
+        <div class="tarjeta">
+            <div class="subseccion">
+                <div class="icono">⛪</div>
+                <div style="font-weight: bold; margin-bottom: 8px; text-align: left; color: #ccc;">Ceremonia Religiosa</div>
+                <span style="font-weight: 500;">
+                    Cita a las 5:00 PM en la 
+                    <a href="https://maps.app.goo.gl/SRx1d1G7XBnBKFdq8" target="_blank">
+                        Parroquia de Nuestra Señora de Guadalupe
+                    </a>
+                </span><br>
+                ubicada en Ejido de Cuautitlán Mz. 22-Lt. 7,<br>
+                Lázaro Cárdenas, 54870 Cuautitlán, Méx.
+            </div>
 
-        <div class="datos">
-            Mis padres, <span class="nombre">Yeni Rodríguez Espinoza</span> y <span class="nombre">Miguel Ángel Rodríguez Hernández</span>,<br>
-            junto a mi madrina <span class="nombre">María de los Ángeles Rodríguez Espinoza</span>,<br>
-            me han guiado con amor, fe y esperanza.
+            <div class="subseccion">
+                <div class="icono">🎉</div>
+                <div style="font-weight: bold; margin-bottom: 8px; text-align: left; color: #ccc;">Recepción</div>
+                <span style="font-weight: 500;">
+                    7:00 PM - 7:30 PM en el 
+                    <a href="https://maps.app.goo.gl/Mb9MFxWnDABKcBkd6" target="_blank">
+                        salón Finca Maldonado
+                    </a>
+                </span><br>
+                Ubicada en Calle 29 Manzana 5 Lote 11,<br>
+                San Blas Uno, 54860 Cuautitlán, Méx.
+            </div>
+        </div>
+
+        <div class="tarjeta" style="text-align: center;">
+            <div class="subseccion">
+                💌 ¡Te espero con mucha ilusión!
+            </div>
         </div>
     </div>
-
-    <div class="tarjeta">
-        <div style="text-align: center; margin-bottom: 30px;">
-            <div class="titulo-quince" style="font-size: 48px;">Detalles de la Celebración</div>
-            <div class="quince" style="font-size: 34px;">Acompáñanos</div>
-        </div>
-
-        <div class="subseccion">
-            <div class="icono">⛪</div>
-            <div style="font-weight: bold; margin-bottom: 8px; text-align: left; color: #333;">Ceremonia Religiosa</div>
-            <span style="font-weight: 500;">Parroquia de Nuestra Señora de Guadalupe</span><br>
-            ubicada en Ejido de Cuautitlán Mz. 22-Lt. 7,<br>
-            Lázaro Cárdenas, 54870 Cuautitlán, Méx.
-        </div>
-
-        <div class="subseccion">
-            <div class="icono">🎉</div>
-            <div style="font-weight: bold; margin-bottom: 8px; text-align: left; color: #333;">Recepción</div>
-            <span style="font-weight: 500;">7:00 PM - 7:30 PM en el salón Finca Maldonado</span><br>
-            Ubicada en Calle 29 Manzana 5 Lote 11,<br>
-            San Blas Uno, 54860 Cuautitlán, Méx.
-        </div>
-
-        <div style="text-align: center; margin-top: 35px; font-size: 18px; color: #555;">
-            ¡Tu presencia es el mejor regalo!
-        </div>
-
-        <a href="https://forms.gle/wuHa65kAivSqgnX36" class="confirmar-asistencia" target="_blank">Confirmar Asistencia</a>
-    </div>
-
 </body>
 </html>
