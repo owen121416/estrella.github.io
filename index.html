@@ -7,10 +7,10 @@
     <style>
         body {
             margin: 0;
-            padding: 30px; /* Aumenté el padding del body */
-            font-family: 'Montserrat', sans-serif; /* Fuente más moderna y legible para el cuerpo */
-            background-color: #f9f9f9; /* Gris claro de fondo */
-            color: #333; /* Gris oscuro para el texto principal */
+            padding: 30px;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -20,15 +20,15 @@
 
         .tarjeta {
             background-color: #fff;
-            border: 1px solid #ddd; /* Borde gris muy claro */
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* Sombra más suave y moderna */
-            margin-bottom: 40px; /* Más espacio entre tarjetas */
-            padding: 40px; /* Aumenté el padding interno */
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            margin-bottom: 40px;
+            padding: 40px;
             width: 90%;
-            max-width: 550px; /* Ligero aumento del ancho máximo */
+            max-width: 550px;
             position: relative;
             overflow: hidden;
-            border-radius: 12px; /* Bordes más redondeados */
+            border-radius: 12px;
             box-sizing: border-box;
             display: flex;
             flex-direction: column;
@@ -36,7 +36,7 @@
         }
 
         .tarjeta:first-child {
-            padding-top: 160px; /* Ajuste para la decoración superior */
+            padding-top: 160px;
         }
 
         .decoracion-arriba {
@@ -44,111 +44,110 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: 150px; /* Aumenté un poco la altura */
+            height: 150px;
             background-image: url('https://i.ibb.co/twcxLrTt/letras.png');
             background-repeat: no-repeat;
-            background-position: center top; /* Centrado horizontalmente */
+            background-position: center top;
             background-size: contain;
             z-index: 5;
-            opacity: 0.8; /* Ligero ajuste de la opacidad */
+            opacity: 0.8;
             border-radius: 12px 12px 0 0;
         }
 
-        .decorativo {
-            position: absolute;
-            top: 20px;
-            left: 20px;
-            width: 100px; /* Reduje un poco el tamaño */
-            z-index: 10;
-            opacity: 0.7;
+        .imagen-central {
+            width: 100%;
+            max-width: 300px;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+            display: block;
         }
 
         .titulo-quince {
             text-align: center;
             font-family: 'Great Vibes', cursive;
-            font-size: 52px; /* Un poco más grande */
-            margin-top: 10px; /* Reduje el margen superior */
-            color: #c93a3d; /* Rojo más elegante */
+            font-size: 52px;
+            margin-top: 10px;
+            color: #c93a3d;
         }
 
         .quince {
-            font-size: 38px; /* Un poco más grande */
-            margin: 8px 0 20px 0; /* Ajusté los márgenes */
+            font-size: 38px;
+            margin: 8px 0 20px 0;
             text-align: center;
             color: #c93a3d;
-            font-weight: 500; /* Ligeramente más grueso */
+            font-weight: 500;
         }
 
         .texto {
             text-align: center;
-            margin: 25px 0; /* Aumenté el margen */
+            margin: 25px 0;
             line-height: 1.8;
-            font-size: 17px; /* Ligeramente más grande */
-            color: #555; /* Gris más suave para el cuerpo del texto */
+            font-size: 17px;
+            color: #555;
         }
 
         .fecha {
-            font-size: 22px; /* Ligeramente más grande */
+            font-size: 22px;
             font-weight: bold;
-            margin: 25px 0; /* Aumenté el margen */
+            margin: 25px 0;
             text-align: center;
-            border-top: 1px solid #eee; /* Borde superior más claro */
-            border-bottom: 1px solid #eee; /* Borde inferior más claro */
-            padding: 15px 0; /* Aumenté el padding */
-            color: #777; /* Gris más claro para la fecha */
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            color: #777;
         }
 
         .datos {
             text-align: center;
             font-size: 16px;
-            margin-top: 20px; /* Aumenté el margen */
+            margin-top: 20px;
             color: #555;
         }
 
         .icono {
-            font-size: 36px; /* Ligeramente más grande */
-            margin-bottom: 12px; /* Aumenté el margen inferior */
+            font-size: 36px;
+            margin-bottom: 12px;
             color: #c93a3d;
             text-align: center;
         }
 
         .subseccion {
-            border-left: 3px solid #c93a3d; /* Rojo más elegante */
-            padding-left: 20px; /* Aumenté el padding izquierdo */
-            margin: 25px 0; /* Aumenté el margen */
+            border-left: 3px solid #c93a3d;
+            padding-left: 20px;
+            margin: 25px 0;
             text-align: left;
             color: #555;
         }
 
         .nombre {
-            font-weight: 500; /* Ligeramente más grueso */
-            color: #333; /* Gris oscuro para los nombres */
+            font-weight: 500;
+            color: #333;
         }
 
         .tarjeta:nth-child(2) .titulo-quince {
-            margin-top: 30px; /* Ajuste para la segunda tarjeta */
+            margin-top: 30px;
         }
 
-        /* Estilos para el botón de confirmar asistencia */
         .confirmar-asistencia {
-            background-color: #c93a3d; /* Rojo más elegante */
+            background-color: #c93a3d;
             color: #fff;
             border: none;
-            padding: 15px 30px; /* Aumenté el padding del botón */
-            border-radius: 10px; /* Bordes más redondeados */
-            font-family: 'Montserrat', sans-serif; /* Fuente más moderna para el botón */
+            padding: 15px 30px;
+            border-radius: 10px;
+            font-family: 'Montserrat', sans-serif;
             font-size: 18px;
-            font-weight: 500; /* Botón más destacado */
+            font-weight: 500;
             cursor: pointer;
             transition: background-color 0.3s ease;
-            margin-top: 30px; /* Más espacio superior */
-            align-self: center; /* Centrar el botón */
+            margin-top: 30px;
+            align-self: center;
             text-decoration: none;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil al botón */
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
         }
 
         .confirmar-asistencia:hover {
-            background-color: #a72d30; /* Tono más oscuro al pasar el ratón */
+            background-color: #a72d30;
         }
     </style>
 </head>
@@ -156,7 +155,9 @@
 
     <div class="tarjeta">
         <div class="decoracion-arriba"></div>
-        <img src="C:\Users\owenn\OneDrive\Escritorio\XV.png" alt="Decorativo" class="decorativo">
+
+        <!-- Imagen principal centrada -->
+        <img src="C:\Users\owenn\OneDrive\Escritorio\XV.png" alt="Foto de Estrella" class="imagen-central">
 
         <div class="texto">
             Con el corazón lleno de ilusión, quiero compartir contigo un momento único en mi vida.<br>
@@ -167,7 +168,8 @@
         <div class="titulo-quince">Estrella</div>
         <div class="quince">XV AÑOS</div>
 
-        <div class="texto" style="font-size: 18px;"> <span class="nombre" style="font-weight: 600; color: #333;">Estrella Fernanda Pichardo Rodríguez</span><br>
+        <div class="texto" style="font-size: 18px;"> 
+            <span class="nombre" style="font-weight: 600; color: #333;">Estrella Fernanda Pichardo Rodríguez</span><br>
             tiene el honor de invitarte a compartir un momento muy especial en su vida,<br>
             acompañándola con tu presencia y cariño en este día inolvidable.
         </div>
